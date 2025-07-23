@@ -18,7 +18,7 @@ $newPortName = $NewIPAddress
 
 # === CREATE NEW TCP/IP PORT IF NEEDED ===
 if (-not (Get-PrinterPort -Name $newPortName -ErrorAction SilentlyContinue)) {
-    Add-PrinterPort -Name $newPortName -PrinterHostAddress $NewIPAddress -PortNumber 9100 -Protocol Raw
+    Add-PrinterPort -Name $newPortName -PrinterHostAddress $NewIPAddress
     Write-Host "Created new port '$newPortName'"
 } else {
     Write-Host "Port '$newPortName' already exists"
