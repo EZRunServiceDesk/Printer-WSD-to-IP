@@ -8,6 +8,12 @@ Change the info in WSD-to-IP.ps1
 * $NewIPAddress = "192.168.1.100" # Your Printer's IP
 
 
+Using WSD-to-IP-Advance.ps1
+
+```
+.\WSD-to-IP-Advance.ps1 -PrinterName "Printer Name" -NewIPAddress "192.168.X.XXX"
+```
+
 ----------------------------------------------------
 
  this script changes the printer configuration system-wide, which means:
